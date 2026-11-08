@@ -1,0 +1,199 @@
+{
+ "_comment": "tools/dumptexts.py — texty referenčního programu v interním kódu (bit 7 = barva), šablony stavového řádku a titulka. Pozice patchů jsou z kódu; význam proměnných doměří M5.",
+ "strings": [
+  {
+   "key": "byPeterLiepa",
+   "address": "$0A18",
+   "raw": "a0a0a2b9a0b0a5b4a5b2a0aca9a5b0a1a0a0a0a0",
+   "text": "@@BY@PETER@LIEPA@@@@",
+   "use": "$229C → titulka $4F20"
+  },
+  {
+   "key": "withChrisGray",
+   "address": "$0A2D",
+   "raw": "a0a0b7a9b4a8a0a3a8b2a9b3a0a7b2a1b9a0a0a0",
+   "text": "@@WITH@CHRIS@GRAY@@@",
+   "use": "$22A9 → titulka $4F34"
+  },
+  {
+   "key": "players",
+   "address": "$0A42",
+   "raw": "91a0b0aca1b9a5b2a0a091a0aaafb9b3b4a9a3ab",
+   "text": "1@PLAYER@@1@JOYSTICK",
+   "use": "$22FA → titulka $4F5C; $2222 mění +0 hráče ($07A7+$51) a +10 joysticky ($07AD+$51)"
+  },
+  {
+   "key": "plyr12",
+   "address": "$0A57",
+   "raw": "a0b0acb9b2a091a0a0a0a0a0a0b0acb9b2a092a0",
+   "text": "@PLYR@1@@@@@@PLYR@2@",
+   "use": "$22C6 → titulka $4F20 (během hry)"
+  },
+  {
+   "key": "last",
+   "address": "$0A6C",
+   "raw": "a0909090909090a0aca1b3b4a0909090909090a0",
+   "text": "@000000@LAST@000000@",
+   "use": "$2925 → RAM $07E3 (titulka $4F34)"
+  },
+  {
+   "key": "high",
+   "address": "$0A81",
+   "raw": "a0909090909090a0a8a9a7a8a0909090909090a0",
+   "text": "@000000@HIGH@000000@",
+   "use": "$2925 → RAM $07F7 (titulka $4F48)"
+  },
+  {
+   "key": "gameOver",
+   "address": "$0A96",
+   "raw": "a0a7a0a1a0ada0a5a0a0a0afa0b6a0a5a0b2a0a0",
+   "text": "@G@A@M@E@@@O@V@E@R@@",
+   "use": "$1F67: LMS stavového řádku"
+  },
+  {
+   "key": "playerStatus",
+   "address": "$0AAB",
+   "raw": "b0aca1b9a5b280918c809380ada5ae80a18f90a0",
+   "text": "PLAYER 1, 3 MEN A/0@",
+   "use": "$2925 → $081F; $282B patchuje +7, +10, +13, +16, +18"
+  },
+  {
+   "key": "outOfTime",
+   "address": "$0AC0",
+   "raw": "a0a0a0a0afb5b4a0afa6a0b4a9ada5a0a0a0a0a0",
+   "text": "@@@@OUT@OF@TIME@@@@@",
+   "use": "$1FA7: LMS stavového řádku ($0AC0)"
+  },
+  {
+   "key": "bonusLife",
+   "address": "$0AD5",
+   "raw": "a0a2a0afa0aea0b5a0b3a0a0aca0a9a0a6a0a5a0",
+   "text": "@B@O@N@U@S@@L@I@F@E@",
+   "use": "$1FF7: LMS stavového řádku ($0AD5)"
+  },
+  {
+   "key": "caveLevel",
+   "address": "$0AEA",
+   "raw": "a0a3a1b6a59aa0a1a0a0aca5b6a5ac9aa091a0a0",
+   "text": "@CAVE:@A@@LEVEL:@1@@",
+   "use": "$22ED → titulka $4F70; $2503 mění +7 jeskyni ($07B7+$60) a $2500 úroveň"
+  },
+  {
+   "key": "spacebarToResume",
+   "address": "$0AFF",
+   "raw": "a0b3b0a1a3a5a2a1b2a0b4afa0b2a5b3b5ada5a0",
+   "text": "@SPACEBAR@TO@RESUME@",
+   "use": "$1C78: LMS stavového řádku ($0AFF) při pauze"
+  },
+  {
+   "key": "pressButtonToPlay",
+   "address": "$0B14",
+   "raw": "b0b2a5b3b3a0a2b5b4b4afaea0b4afa0b0aca1b9",
+   "text": "PRESS@BUTTON@TO@PLAY",
+   "use": "$22B6 → titulka $4F48"
+  }
+ ],
+ "titleColors": {
+  "address": "$25BE",
+  "colors": [
+   148,
+   150,
+   12,
+   158,
+   0
+  ]
+ },
+ "statusLine": {
+  "buffers": [
+   "$080B",
+   "$081F"
+  ],
+  "lms": "$5EA4",
+  "beforeBirth": {
+   "template": "playerStatus",
+   "buffer": "$081F",
+   "patches": [
+    {
+     "offset": 7,
+     "from": "$07A6 + $91",
+     "meaning": "hráč 1/2"
+    },
+    {
+     "offset": 10,
+     "from": "$07B6 + $90",
+     "meaning": "životy"
+    },
+    {
+     "offset": 13,
+     "from": "$A1 if $07B6 == 1 else $A5",
+     "meaning": "MAN/MEN"
+    },
+    {
+     "offset": 16,
+     "from": "$07B7 + $A0",
+     "meaning": "jeskyně"
+    },
+    {
+     "offset": 18,
+     "from": "$07B8 + $91",
+     "meaning": "úroveň"
+    }
+   ]
+  },
+  "inGame": {
+   "buffer": "$080B",
+   "fixed": [
+    {
+     "offset": 3,
+     "value": 188,
+     "meaning": "diamant ($2943)"
+    }
+   ],
+   "fields": [
+    {
+     "offset": 1,
+     "length": 2,
+     "from": "$083D + $50"
+    },
+    {
+     "offset": 4,
+     "length": 2,
+     "from": "$07B4 + $90"
+    },
+    {
+     "offset": 7,
+     "length": 2,
+     "from": "$083B + $50"
+    },
+    {
+     "offset": 10,
+     "length": 3,
+     "from": "$0836 + $90",
+     "meaning": "čas"
+    },
+    {
+     "offset": 14,
+     "length": 6,
+     "from": "$07B9 + $90",
+     "meaning": "skóre"
+    }
+   ]
+  }
+ },
+ "title": {
+  "see": "data/title.json (tools/dumptitle.py, M7): display list $0961, bitmapy režimu E, stavba obrazu $4C00 ($2252), animace ($2425)",
+  "unused": {
+   "address": "$2A12",
+   "length": 878,
+   "note": "do M6 tady jako šablona 19 × 40; nic v kódu na tu adresu neukazuje"
+  },
+  "rows": {
+   "$4F20": "byPeterLiepa | plyr12",
+   "$4F34": "withChrisGray | last",
+   "$4F48": "pressButtonToPlay | high",
+   "$4F5C": "players",
+   "$4F70": "caveLevel"
+  },
+  "rowsNote": "řádky režimu 6 menu (DL $0928), titulka (DL $0961) je neukazuje"
+ }
+}

@@ -1,0 +1,2938 @@
+{
+ "_comment": "tools/dumpcaves.py \u2014 20 jeskyn\u00ed z tabulky $3528 referen\u010dn\u00edho programu (ukazatele $3500). Hlavi\u010dka 32 B (COLOR0\u20134 v $13\u2013$17), kreslic\u00ed instrukce od $20. Dolo\u017eeno tools/matchcaves.mjs (C64 surov\u00e1 data, cartridge) a tools/matchcavegen.mjs (100 vygenerovan\u00fdch jeskyn\u00ed proti origin\u00e1lu).",
+ "table": "$3528",
+ "pointers": "$3500",
+ "copy": "$5F00",
+ "directions": [
+  [
+   0,
+   -1
+  ],
+  [
+   1,
+   -1
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   1,
+   1
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   -1,
+   1
+  ],
+  [
+   -1,
+   0
+  ],
+  [
+   -1,
+   -1
+  ]
+ ],
+ "objects": {
+  "00": {
+   "name": "space",
+   "measured": false
+  },
+  "01": {
+   "name": "dirt",
+   "measured": true
+  },
+  "02": {
+   "name": "brick",
+   "measured": false
+  },
+  "03": {
+   "name": "magicWall",
+   "measured": false
+  },
+  "04": {
+   "name": "preOutbox",
+   "measured": false
+  },
+  "05": {
+   "name": "outbox",
+   "measured": false
+  },
+  "07": {
+   "name": "steel",
+   "measured": true
+  },
+  "08": {
+   "name": "fireflyL",
+   "measured": false
+  },
+  "09": {
+   "name": "fireflyU",
+   "measured": false
+  },
+  "0A": {
+   "name": "fireflyR",
+   "measured": false
+  },
+  "0B": {
+   "name": "fireflyD",
+   "measured": false
+  },
+  "10": {
+   "name": "boulder",
+   "measured": false
+  },
+  "12": {
+   "name": "boulderFalling",
+   "measured": false
+  },
+  "14": {
+   "name": "diamond",
+   "measured": false
+  },
+  "16": {
+   "name": "diamondFalling",
+   "measured": false
+  },
+  "25": {
+   "name": "inbox",
+   "measured": true
+  },
+  "30": {
+   "name": "butterflyD",
+   "measured": false
+  },
+  "31": {
+   "name": "butterflyL",
+   "measured": false
+  },
+  "32": {
+   "name": "butterflyU",
+   "measured": false
+  },
+  "33": {
+   "name": "butterflyR",
+   "measured": false
+  },
+  "38": {
+   "name": "rockford",
+   "measured": false
+  },
+  "3A": {
+   "name": "amoeba",
+   "measured": false
+  }
+ },
+ "caves": [
+  {
+   "number": 1,
+   "name": "A",
+   "intermission": false,
+   "address": "$3528",
+   "length": 49,
+   "raw": "01140a0f0a0b0c0d0e0c0c0c0c0c966e46281e26060cd420001014003c3209004201091e024209101e02250304042612ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 10,
+    "extraDiamondValue": 15,
+    "seeds": [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "diamondsNeeded": [
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "times": [
+     150,
+     110,
+     70,
+     40,
+     30
+    ],
+    "colors": [
+     38,
+     6,
+     12,
+     212,
+     32
+    ],
+    "randomObjects": [
+     0,
+     16,
+     20,
+     0
+    ],
+    "randomProbabilities": [
+     60,
+     50,
+     9,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "line",
+     "object": 2,
+     "x": 1,
+     "y": 9,
+     "length": 30,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 9,
+     "y": 16,
+     "length": 30,
+     "direction": 2
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 4
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 38,
+     "y": 18
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "name": "B",
+   "intermission": false,
+   "address": "$3559",
+   "length": 89,
+   "raw": "0214143203000157580a0c090d0a966e4646464476cc0400001014083c320902420108260242010f26024208031404421003140442180314044220031404400105260240010b260240011226024014031404251215041216ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 20,
+    "extraDiamondValue": 50,
+    "seeds": [
+     3,
+     0,
+     1,
+     87,
+     88
+    ],
+    "diamondsNeeded": [
+     10,
+     12,
+     9,
+     13,
+     10
+    ],
+    "times": [
+     150,
+     110,
+     70,
+     70,
+     70
+    ],
+    "colors": [
+     68,
+     118,
+     204,
+     4,
+     0
+    ],
+    "randomObjects": [
+     0,
+     16,
+     20,
+     8
+    ],
+    "randomProbabilities": [
+     60,
+     50,
+     9,
+     2
+    ]
+   },
+   "instructions": [
+    {
+     "type": "line",
+     "object": 2,
+     "x": 1,
+     "y": 8,
+     "length": 38,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 1,
+     "y": 15,
+     "length": 38,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 8,
+     "y": 3,
+     "length": 20,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 16,
+     "y": 3,
+     "length": 20,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 24,
+     "y": 3,
+     "length": 20,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 32,
+     "y": 3,
+     "length": 20,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 0,
+     "x": 1,
+     "y": 5,
+     "length": 38,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 0,
+     "x": 1,
+     "y": 11,
+     "length": 38,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 0,
+     "x": 1,
+     "y": 18,
+     "length": 38,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 0,
+     "x": 20,
+     "y": 3,
+     "length": 20,
+     "direction": 4
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 18,
+     "y": 21
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 18,
+     "y": 22
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "name": "C",
+   "intermission": false,
+   "address": "$35B2",
+   "length": 39,
+   "raw": "03000f000032363437181718171596645a5046c4464c04000210140064320900250304042714ff",
+   "header": {
+    "magicWallTime": 0,
+    "diamondValue": 15,
+    "extraDiamondValue": 0,
+    "seeds": [
+     0,
+     50,
+     54,
+     52,
+     55
+    ],
+    "diamondsNeeded": [
+     24,
+     23,
+     24,
+     23,
+     21
+    ],
+    "times": [
+     150,
+     100,
+     90,
+     80,
+     70
+    ],
+    "colors": [
+     196,
+     70,
+     76,
+     4,
+     0
+    ],
+    "randomObjects": [
+     2,
+     16,
+     20,
+     0
+    ],
+    "randomProbabilities": [
+     100,
+     50,
+     9,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 4
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 20
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "name": "D",
+   "intermission": false,
+   "address": "$35D9",
+   "length": 75,
+   "raw": "04140514006e70737724242424247864503c3274363cd400100000001400000025010304261681080a040400300a0b81100a04040030120b81180a040400301a0b81200a04040030220bff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 5,
+    "extraDiamondValue": 20,
+    "seeds": [
+     0,
+     110,
+     112,
+     115,
+     119
+    ],
+    "diamondsNeeded": [
+     36,
+     36,
+     36,
+     36,
+     36
+    ],
+    "times": [
+     120,
+     100,
+     80,
+     60,
+     50
+    ],
+    "colors": [
+     116,
+     54,
+     60,
+     212,
+     0
+    ],
+    "randomObjects": [
+     16,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     20,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 37,
+     "x": 1,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 38,
+     "y": 22
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 8,
+     "y": 10,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 48,
+     "x": 10,
+     "y": 11
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 16,
+     "y": 10,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 48,
+     "x": 18,
+     "y": 11
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 24,
+     "y": 10,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 48,
+     "x": 26,
+     "y": 11
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 32,
+     "y": 10,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 48,
+     "x": 34,
+     "y": 11
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "name": "E",
+   "intermission": false,
+   "address": "$3624",
+   "length": 135,
+   "raw": "0514325a0000000000040506070896785a3c1e14564c0400000000000000000025010304271680080a03030080100a03030080180a03030080200a03030014090c080a0a14110c08120a14190c081a0a14210c08220a800810030300801010030300801810030300802010030300140912080a10141112081210141912081a10142112082210ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 50,
+    "extraDiamondValue": 90,
+    "seeds": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "diamondsNeeded": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "times": [
+     150,
+     120,
+     90,
+     60,
+     30
+    ],
+    "colors": [
+     20,
+     86,
+     76,
+     4,
+     0
+    ],
+    "randomObjects": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 37,
+     "x": 1,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 22
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 8,
+     "y": 10,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 16,
+     "y": 10,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 24,
+     "y": 10,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 32,
+     "y": 10,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 9,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 10,
+     "y": 10
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 17,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 18,
+     "y": 10
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 25,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 26,
+     "y": 10
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 33,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 34,
+     "y": 10
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 8,
+     "y": 16,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 16,
+     "y": 16,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 24,
+     "y": 16,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 32,
+     "y": 16,
+     "width": 3,
+     "height": 3,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 9,
+     "y": 18
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 10,
+     "y": 16
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 17,
+     "y": 18
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 18,
+     "y": 16
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 25,
+     "y": 18
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 26,
+     "y": 16
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 33,
+     "y": 18
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 34,
+     "y": 16
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "name": "F",
+   "intermission": false,
+   "address": "$36AB",
+   "length": 145,
+   "raw": "0614283c001415161704060708089678645a5084460cd40010000000320000008201030a04008201060a04008201090a040082010c0a0400410a030d0414030508040514030808040814030b08040b14030e08040e821d030a0400821d060a0400821d090a0400821d0c0a0400411d030d0414240508230514240808230814240b08230b14240e08230e250314042614ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 40,
+    "extraDiamondValue": 60,
+    "seeds": [
+     0,
+     20,
+     21,
+     22,
+     23
+    ],
+    "diamondsNeeded": [
+     4,
+     6,
+     7,
+     8,
+     8
+    ],
+    "times": [
+     150,
+     120,
+     100,
+     90,
+     80
+    ],
+    "colors": [
+     132,
+     70,
+     12,
+     212,
+     0
+    ],
+    "randomObjects": [
+     16,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     50,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 1,
+     "y": 3,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 1,
+     "y": 6,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 1,
+     "y": 9,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 1,
+     "y": 12,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "line",
+     "object": 1,
+     "x": 10,
+     "y": 3,
+     "length": 13,
+     "direction": 4
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 3,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 4,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 3,
+     "y": 8
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 4,
+     "y": 8
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 3,
+     "y": 11
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 4,
+     "y": 11
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 3,
+     "y": 14
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 4,
+     "y": 14
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 29,
+     "y": 3,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 29,
+     "y": 6,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 29,
+     "y": 9,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 29,
+     "y": 12,
+     "width": 10,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "line",
+     "object": 1,
+     "x": 29,
+     "y": 3,
+     "length": 13,
+     "direction": 4
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 36,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 35,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 36,
+     "y": 8
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 35,
+     "y": 8
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 36,
+     "y": 11
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 35,
+     "y": 11
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 36,
+     "y": 14
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 35,
+     "y": 14
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 20
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 38,
+     "y": 20
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "name": "G",
+   "intermission": false,
+   "address": "$373C",
+   "length": 72,
+   "raw": "074b0a140207080a090f14191919787878787824463cd40000100800642802004201070c02421c050b027a1315020214040614040e14041614220414220c142216251403042707ff",
+   "header": {
+    "magicWallTime": 75,
+    "diamondValue": 10,
+    "extraDiamondValue": 20,
+    "seeds": [
+     2,
+     7,
+     8,
+     10,
+     9
+    ],
+    "diamondsNeeded": [
+     15,
+     20,
+     25,
+     25,
+     25
+    ],
+    "times": [
+     120,
+     120,
+     120,
+     120,
+     120
+    ],
+    "colors": [
+     36,
+     70,
+     60,
+     212,
+     0
+    ],
+    "randomObjects": [
+     0,
+     16,
+     8,
+     0
+    ],
+    "randomProbabilities": [
+     100,
+     40,
+     2,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "line",
+     "object": 2,
+     "x": 1,
+     "y": 7,
+     "length": 12,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 28,
+     "y": 5,
+     "length": 11,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 58,
+     "x": 19,
+     "y": 21,
+     "length": 2,
+     "direction": 2
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 4,
+     "y": 6
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 4,
+     "y": 14
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 4,
+     "y": 22
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 34,
+     "y": 4
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 34,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 34,
+     "y": 22
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 20,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 7
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "name": "H",
+   "intermission": false,
+   "address": "$3784",
+   "length": 87,
+   "raw": "08140a1401030405060a0f141414786e645a5034967c0400001008005a32020014040614220414220c0400052514034201070c0242010f0c02421c050b02421c0d0b02430e110802140c10000e12141312410e0f0802ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 10,
+    "extraDiamondValue": 20,
+    "seeds": [
+     1,
+     3,
+     4,
+     5,
+     6
+    ],
+    "diamondsNeeded": [
+     10,
+     15,
+     20,
+     20,
+     20
+    ],
+    "times": [
+     120,
+     110,
+     100,
+     90,
+     80
+    ],
+    "colors": [
+     52,
+     150,
+     124,
+     4,
+     0
+    ],
+    "randomObjects": [
+     0,
+     16,
+     8,
+     0
+    ],
+    "randomProbabilities": [
+     90,
+     50,
+     2,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 20,
+     "x": 4,
+     "y": 6
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 34,
+     "y": 4
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 34,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 0,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 20,
+     "y": 3
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 1,
+     "y": 7,
+     "length": 12,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 1,
+     "y": 15,
+     "length": 12,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 28,
+     "y": 5,
+     "length": 11,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 28,
+     "y": 13,
+     "length": 11,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 3,
+     "x": 14,
+     "y": 17,
+     "length": 8,
+     "direction": 2
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 12,
+     "y": 16
+    },
+    {
+     "type": "point",
+     "object": 0,
+     "x": 14,
+     "y": 18
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 19,
+     "y": 18
+    },
+    {
+     "type": "line",
+     "object": 1,
+     "x": 14,
+     "y": 15,
+     "length": 8,
+     "direction": 2
+    }
+   ]
+  },
+  {
+   "number": 9,
+   "name": "I",
+   "intermission": false,
+   "address": "$37DB",
+   "length": 67,
+   "raw": "0914050a64898cfb334b4b50555a969682827836767c043010140000f078000082050a0d0d00010c0a82190a0d0d00011f0a4211120902401113090225070c04080cff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 5,
+    "extraDiamondValue": 10,
+    "seeds": [
+     100,
+     137,
+     140,
+     251,
+     51
+    ],
+    "diamondsNeeded": [
+     75,
+     75,
+     80,
+     85,
+     90
+    ],
+    "times": [
+     150,
+     150,
+     130,
+     130,
+     120
+    ],
+    "colors": [
+     54,
+     118,
+     124,
+     4,
+     48
+    ],
+    "randomObjects": [
+     16,
+     20,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     240,
+     120,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 5,
+     "y": 10,
+     "width": 13,
+     "height": 13,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 1,
+     "x": 12,
+     "y": 10
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 25,
+     "y": 10,
+     "width": 13,
+     "height": 13,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 1,
+     "x": 31,
+     "y": 10
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 17,
+     "y": 18,
+     "length": 9,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 0,
+     "x": 17,
+     "y": 19,
+     "length": 9,
+     "direction": 2
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 7,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 8,
+     "y": 12
+    }
+   ]
+  },
+  {
+   "number": 10,
+   "name": "J",
+   "intermission": false,
+   "address": "$381E",
+   "length": 101,
+   "raw": "0a14193c00000000000c0c0c0c0c9682786e6484260cd4000000000000000000250d030427165405041103541504110580050b110308c201041511000d04c207060d0d000d06c209080909000d08c20b0a0505000d0a820306030f080004065404100404ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 25,
+    "extraDiamondValue": 60,
+    "seeds": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "diamondsNeeded": [
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "times": [
+     150,
+     130,
+     120,
+     110,
+     100
+    ],
+    "colors": [
+     132,
+     38,
+     12,
+     212,
+     0
+    ],
+    "randomObjects": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 37,
+     "x": 13,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 22
+    },
+    {
+     "type": "line",
+     "object": 20,
+     "x": 5,
+     "y": 4,
+     "length": 17,
+     "direction": 3
+    },
+    {
+     "type": "line",
+     "object": 20,
+     "x": 21,
+     "y": 4,
+     "length": 17,
+     "direction": 5
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 5,
+     "y": 11,
+     "width": 17,
+     "height": 3,
+     "fill": 8
+    },
+    {
+     "type": "rect",
+     "object": 2,
+     "x": 1,
+     "y": 4,
+     "width": 21,
+     "height": 17
+    },
+    {
+     "type": "point",
+     "object": 0,
+     "x": 13,
+     "y": 4
+    },
+    {
+     "type": "rect",
+     "object": 2,
+     "x": 7,
+     "y": 6,
+     "width": 13,
+     "height": 13
+    },
+    {
+     "type": "point",
+     "object": 0,
+     "x": 13,
+     "y": 6
+    },
+    {
+     "type": "rect",
+     "object": 2,
+     "x": 9,
+     "y": 8,
+     "width": 9,
+     "height": 9
+    },
+    {
+     "type": "point",
+     "object": 0,
+     "x": 13,
+     "y": 8
+    },
+    {
+     "type": "rect",
+     "object": 2,
+     "x": 11,
+     "y": 10,
+     "width": 5,
+     "height": 5
+    },
+    {
+     "type": "point",
+     "object": 0,
+     "x": 13,
+     "y": 10
+    },
+    {
+     "type": "filledRect",
+     "object": 2,
+     "x": 3,
+     "y": 6,
+     "width": 3,
+     "height": 15,
+     "fill": 8
+    },
+    {
+     "type": "point",
+     "object": 0,
+     "x": 4,
+     "y": 6
+    },
+    {
+     "type": "line",
+     "object": 20,
+     "x": 4,
+     "y": 16,
+     "length": 4,
+     "direction": 4
+    }
+   ]
+  },
+  {
+   "number": 11,
+   "name": "K",
+   "intermission": false,
+   "address": "$3883",
+   "length": 102,
+   "raw": "0b1432000004669764060606060678789696f004262c00000010080064500200420a0309044214030904421e0309044209160900420c0f110242050b0902420f0b090242190b0902421c130b01140403140e03141803142203140416142315251414042611ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 50,
+    "extraDiamondValue": 0,
+    "seeds": [
+     0,
+     4,
+     102,
+     151,
+     100
+    ],
+    "diamondsNeeded": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "times": [
+     120,
+     120,
+     150,
+     150,
+     240
+    ],
+    "colors": [
+     4,
+     38,
+     44,
+     0,
+     0
+    ],
+    "randomObjects": [
+     0,
+     16,
+     8,
+     0
+    ],
+    "randomProbabilities": [
+     100,
+     80,
+     2,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "line",
+     "object": 2,
+     "x": 10,
+     "y": 3,
+     "length": 9,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 20,
+     "y": 3,
+     "length": 9,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 30,
+     "y": 3,
+     "length": 9,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 9,
+     "y": 22,
+     "length": 9,
+     "direction": 0
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 12,
+     "y": 15,
+     "length": 17,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 5,
+     "y": 11,
+     "length": 9,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 15,
+     "y": 11,
+     "length": 9,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 25,
+     "y": 11,
+     "length": 9,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 28,
+     "y": 19,
+     "length": 11,
+     "direction": 1
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 4,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 14,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 24,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 34,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 4,
+     "y": 22
+    },
+    {
+     "type": "point",
+     "object": 20,
+     "x": 35,
+     "y": 21
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 20,
+     "y": 20
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 38,
+     "y": 17
+    }
+   ]
+  },
+  {
+   "number": 12,
+   "name": "L",
+   "intermission": false,
+   "address": "$38E9",
+   "length": 106,
+   "raw": "0c141400003c023b6613130e1015b4aaa0a0a006545ad400001014003c320900420a051204420e051204421205120442160512044202060b0242020a0b0242020e0f024202120b02811e04040400082005811e0904040008200a811e0e04040008200f250314042716ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 20,
+    "extraDiamondValue": 0,
+    "seeds": [
+     0,
+     60,
+     2,
+     59,
+     102
+    ],
+    "diamondsNeeded": [
+     19,
+     19,
+     14,
+     16,
+     21
+    ],
+    "times": [
+     180,
+     170,
+     160,
+     160,
+     160
+    ],
+    "colors": [
+     6,
+     84,
+     90,
+     212,
+     0
+    ],
+    "randomObjects": [
+     0,
+     16,
+     20,
+     0
+    ],
+    "randomProbabilities": [
+     60,
+     50,
+     9,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "line",
+     "object": 2,
+     "x": 10,
+     "y": 5,
+     "length": 18,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 14,
+     "y": 5,
+     "length": 18,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 18,
+     "y": 5,
+     "length": 18,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 22,
+     "y": 5,
+     "length": 18,
+     "direction": 4
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 2,
+     "y": 6,
+     "length": 11,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 2,
+     "y": 10,
+     "length": 11,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 2,
+     "y": 14,
+     "length": 15,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 2,
+     "y": 18,
+     "length": 11,
+     "direction": 2
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 30,
+     "y": 4,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 32,
+     "y": 5
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 30,
+     "y": 9,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 32,
+     "y": 10
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 30,
+     "y": 14,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 32,
+     "y": 15
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 20
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 22
+    }
+   ]
+  },
+  {
+   "number": 13,
+   "name": "M",
+   "intermission": false,
+   "address": "$3953",
+   "length": 62,
+   "raw": "0d8c0508000102030432373c4650a09b96918c74262cd4001000000028000000251203040a033a14034205121e027005131e025005141e02c105151e02ff",
+   "header": {
+    "magicWallTime": 140,
+    "diamondValue": 5,
+    "extraDiamondValue": 8,
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "diamondsNeeded": [
+     50,
+     55,
+     60,
+     70,
+     80
+    ],
+    "times": [
+     160,
+     155,
+     150,
+     145,
+     140
+    ],
+    "colors": [
+     116,
+     38,
+     44,
+     212,
+     0
+    ],
+    "randomObjects": [
+     16,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     40,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 37,
+     "x": 18,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 10,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 58,
+     "x": 20,
+     "y": 3
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 5,
+     "y": 18,
+     "length": 30,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 48,
+     "x": 5,
+     "y": 19,
+     "length": 30,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 5,
+     "y": 20,
+     "length": 30,
+     "direction": 2
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 5,
+     "y": 21,
+     "width": 30,
+     "height": 2
+    }
+   ]
+  },
+  {
+   "number": 14,
+   "name": "N",
+   "intermission": false,
+   "address": "$3991",
+   "length": 90,
+   "raw": "0e140a1400000000001e23282a2d96918c87820626fc00001000000000000000810a0a0d0d00700b0b0c03c10c0a030dc1100a030dc1140a030d5016080c024816070c02c117060304c11b060304c11f060304250303042714ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 10,
+    "extraDiamondValue": 20,
+    "seeds": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "diamondsNeeded": [
+     30,
+     35,
+     40,
+     42,
+     45
+    ],
+    "times": [
+     150,
+     145,
+     140,
+     135,
+     130
+    ],
+    "colors": [
+     6,
+     38,
+     252,
+     0,
+     0
+    ],
+    "randomObjects": [
+     16,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 10,
+     "y": 10,
+     "width": 13,
+     "height": 13,
+     "fill": 0
+    },
+    {
+     "type": "line",
+     "object": 48,
+     "x": 11,
+     "y": 11,
+     "length": 12,
+     "direction": 3
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 12,
+     "y": 10,
+     "width": 3,
+     "height": 13
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 16,
+     "y": 10,
+     "width": 3,
+     "height": 13
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 20,
+     "y": 10,
+     "width": 3,
+     "height": 13
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 22,
+     "y": 8,
+     "length": 12,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 8,
+     "x": 22,
+     "y": 7,
+     "length": 12,
+     "direction": 2
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 23,
+     "y": 6,
+     "width": 3,
+     "height": 4
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 27,
+     "y": 6,
+     "width": 3,
+     "height": 4
+    },
+    {
+     "type": "rect",
+     "object": 1,
+     "x": 31,
+     "y": 6,
+     "width": 3,
+     "height": 4
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 20
+    }
+   ]
+  },
+  {
+   "number": 15,
+   "name": "O",
+   "intermission": false,
+   "address": "$39EB",
+   "length": 59,
+   "raw": "0f080a14011d1e1f200f1414191e787878788c36767c040000100800645002004202040a03420f0d0a01410c0e0302430c0f0302041416251403ff",
+   "header": {
+    "magicWallTime": 8,
+    "diamondValue": 10,
+    "extraDiamondValue": 20,
+    "seeds": [
+     1,
+     29,
+     30,
+     31,
+     32
+    ],
+    "diamondsNeeded": [
+     15,
+     20,
+     20,
+     25,
+     30
+    ],
+    "times": [
+     120,
+     120,
+     120,
+     120,
+     140
+    ],
+    "colors": [
+     54,
+     118,
+     124,
+     4,
+     0
+    ],
+    "randomObjects": [
+     0,
+     16,
+     8,
+     0
+    ],
+    "randomProbabilities": [
+     100,
+     80,
+     2,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "line",
+     "object": 2,
+     "x": 2,
+     "y": 4,
+     "length": 10,
+     "direction": 3
+    },
+    {
+     "type": "line",
+     "object": 2,
+     "x": 15,
+     "y": 13,
+     "length": 10,
+     "direction": 1
+    },
+    {
+     "type": "line",
+     "object": 1,
+     "x": 12,
+     "y": 14,
+     "length": 3,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 3,
+     "x": 12,
+     "y": 15,
+     "length": 3,
+     "direction": 2
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 20,
+     "y": 22
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 20,
+     "y": 3
+    }
+   ]
+  },
+  {
+   "number": 16,
+   "name": "P",
+   "intermission": false,
+   "address": "$3A26",
+   "length": 95,
+   "raw": "10140a140178817e7b0c0f0f0f0c969696969624562cd4001000000032000000250103042704810813040400080a14c2070a060843070a0602811013040400081214c20f0a0608430f0a0602811813040400081a14812013040400082214ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 10,
+    "extraDiamondValue": 20,
+    "seeds": [
+     1,
+     120,
+     129,
+     126,
+     123
+    ],
+    "diamondsNeeded": [
+     12,
+     15,
+     15,
+     15,
+     12
+    ],
+    "times": [
+     150,
+     150,
+     150,
+     150,
+     150
+    ],
+    "colors": [
+     36,
+     86,
+     44,
+     212,
+     0
+    ],
+    "randomObjects": [
+     16,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     50,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "point",
+     "object": 37,
+     "x": 1,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 39,
+     "y": 4
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 8,
+     "y": 19,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 10,
+     "y": 20
+    },
+    {
+     "type": "rect",
+     "object": 2,
+     "x": 7,
+     "y": 10,
+     "width": 6,
+     "height": 8
+    },
+    {
+     "type": "line",
+     "object": 3,
+     "x": 7,
+     "y": 10,
+     "length": 6,
+     "direction": 2
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 16,
+     "y": 19,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 18,
+     "y": 20
+    },
+    {
+     "type": "rect",
+     "object": 2,
+     "x": 15,
+     "y": 10,
+     "width": 6,
+     "height": 8
+    },
+    {
+     "type": "line",
+     "object": 3,
+     "x": 15,
+     "y": 10,
+     "length": 6,
+     "direction": 2
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 24,
+     "y": 19,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 26,
+     "y": 20
+    },
+    {
+     "type": "filledRect",
+     "object": 1,
+     "x": 32,
+     "y": 19,
+     "width": 4,
+     "height": 4,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 8,
+     "x": 34,
+     "y": 20
+    }
+   ]
+  },
+  {
+   "number": 17,
+   "name": "I1",
+   "intermission": true,
+   "address": "$3A85",
+   "length": 60,
+   "raw": "11141e000a0b0c0d0e06060606060a0a0a0a0a76447c040000140000ff090000870002281607870002140c00320a0c100a04010a0525030504120cff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 30,
+    "extraDiamondValue": 0,
+    "seeds": [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "diamondsNeeded": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "times": [
+     10,
+     10,
+     10,
+     10,
+     10
+    ],
+    "colors": [
+     118,
+     68,
+     124,
+     4,
+     0
+    ],
+    "randomObjects": [
+     0,
+     20,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     255,
+     9,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 40,
+     "height": 22,
+     "fill": 7
+    },
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 20,
+     "height": 12,
+     "fill": 0
+    },
+    {
+     "type": "point",
+     "object": 50,
+     "x": 10,
+     "y": 12
+    },
+    {
+     "type": "point",
+     "object": 16,
+     "x": 10,
+     "y": 4
+    },
+    {
+     "type": "point",
+     "object": 1,
+     "x": 10,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 5
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 18,
+     "y": 12
+    }
+   ]
+  },
+  {
+   "number": 18,
+   "name": "I2",
+   "intermission": true,
+   "address": "$3AC1",
+   "length": 86,
+   "raw": "12140a000a0b0c0d0e10101010100f0f0f0f0f74082c00000000000000000000870002281607870002140c015001030903480203080354010508035001060703501203090554120508055012060705250104041204ff",
+   "header": {
+    "magicWallTime": 20,
+    "diamondValue": 10,
+    "extraDiamondValue": 0,
+    "seeds": [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "diamondsNeeded": [
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "times": [
+     15,
+     15,
+     15,
+     15,
+     15
+    ],
+    "colors": [
+     116,
+     8,
+     44,
+     0,
+     0
+    ],
+    "randomObjects": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 40,
+     "height": 22,
+     "fill": 7
+    },
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 20,
+     "height": 12,
+     "fill": 1
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 1,
+     "y": 3,
+     "length": 9,
+     "direction": 3
+    },
+    {
+     "type": "line",
+     "object": 8,
+     "x": 2,
+     "y": 3,
+     "length": 8,
+     "direction": 3
+    },
+    {
+     "type": "line",
+     "object": 20,
+     "x": 1,
+     "y": 5,
+     "length": 8,
+     "direction": 3
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 1,
+     "y": 6,
+     "length": 7,
+     "direction": 3
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 18,
+     "y": 3,
+     "length": 9,
+     "direction": 5
+    },
+    {
+     "type": "line",
+     "object": 20,
+     "x": 18,
+     "y": 5,
+     "length": 8,
+     "direction": 5
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 18,
+     "y": 6,
+     "length": 7,
+     "direction": 5
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 1,
+     "y": 4
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 18,
+     "y": 4
+    }
+   ]
+  },
+  {
+   "number": 19,
+   "name": "I3",
+   "intermission": true,
+   "address": "$3B17",
+   "length": 62,
+   "raw": "13040a000a0b0c0d0e0e0e0e0e0e141414141476367c14000000000000000000870002281607870002140c0054010c1202880f09040408250803041207ff",
+   "header": {
+    "magicWallTime": 4,
+    "diamondValue": 10,
+    "extraDiamondValue": 0,
+    "seeds": [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "diamondsNeeded": [
+     14,
+     14,
+     14,
+     14,
+     14
+    ],
+    "times": [
+     20,
+     20,
+     20,
+     20,
+     20
+    ],
+    "colors": [
+     118,
+     54,
+     124,
+     20,
+     0
+    ],
+    "randomObjects": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 40,
+     "height": 22,
+     "fill": 7
+    },
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 20,
+     "height": 12,
+     "fill": 0
+    },
+    {
+     "type": "line",
+     "object": 20,
+     "x": 1,
+     "y": 12,
+     "length": 18,
+     "direction": 2
+    },
+    {
+     "type": "filledRect",
+     "object": 8,
+     "x": 15,
+     "y": 9,
+     "width": 4,
+     "height": 4,
+     "fill": 8
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 8,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 18,
+     "y": 7
+    }
+   ]
+  },
+  {
+   "number": 20,
+   "name": "I4",
+   "intermission": true,
+   "address": "$3B55",
+   "length": 77,
+   "raw": "14031e0000000000000606060606141414141474367c04000000000000000000870002281607870002140c01d00b030302800b07030600430b060302430b0a0302500807030325030304090aff",
+   "header": {
+    "magicWallTime": 3,
+    "diamondValue": 30,
+    "extraDiamondValue": 0,
+    "seeds": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "diamondsNeeded": [
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "times": [
+     20,
+     20,
+     20,
+     20,
+     20
+    ],
+    "colors": [
+     116,
+     54,
+     124,
+     4,
+     0
+    ],
+    "randomObjects": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "randomProbabilities": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "instructions": [
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 40,
+     "height": 22,
+     "fill": 7
+    },
+    {
+     "type": "filledRect",
+     "object": 7,
+     "x": 0,
+     "y": 2,
+     "width": 20,
+     "height": 12,
+     "fill": 1
+    },
+    {
+     "type": "rect",
+     "object": 16,
+     "x": 11,
+     "y": 3,
+     "width": 3,
+     "height": 2
+    },
+    {
+     "type": "filledRect",
+     "object": 0,
+     "x": 11,
+     "y": 7,
+     "width": 3,
+     "height": 6,
+     "fill": 0
+    },
+    {
+     "type": "line",
+     "object": 3,
+     "x": 11,
+     "y": 6,
+     "length": 3,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 3,
+     "x": 11,
+     "y": 10,
+     "length": 3,
+     "direction": 2
+    },
+    {
+     "type": "line",
+     "object": 16,
+     "x": 8,
+     "y": 7,
+     "length": 3,
+     "direction": 3
+    },
+    {
+     "type": "point",
+     "object": 37,
+     "x": 3,
+     "y": 3
+    },
+    {
+     "type": "point",
+     "object": 4,
+     "x": 9,
+     "y": 10
+    }
+   ]
+  }
+ ]
+}

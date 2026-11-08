@@ -1,0 +1,194 @@
+{
+ "_comment": "tools/dumpcharset.py \u2014 sady $4000\u2013$4BFF referen\u010dn\u00edho programu (base64) a tabulka dla\u017edic $3C40. Dolo\u017eeno tools/matchcharset.mjs (proti pam\u011bti b\u011b\u017e\u00edc\u00edho origin\u00e1lu).",
+ "blocks": [
+  {
+   "name": "A",
+   "address": "$4000",
+   "length": 1024,
+   "note": "titulka, menu, stavov\u00fd \u0159\u00e1dek (CHBAS $40)",
+   "data": "AAAAAAAAAABVVVVVVVVVVaqqqqqqqqqq//////////8YPmA8BnwYAABmbBgwZkYAAMDw/P////////////zwwG9vb29vb29vAMDw/P////////////zwwHpqGqqnpqGqAAAAAAAYGDAAAAAAABgYMAd/PwcHB///AAIGDBgwYMAAfObm5ub+fAAYODgYGH5+AHzOHDhw/v4AfgwYDOb+fADAwNz+HBwcAP7g/Abm/nwAfOD85ub+fAD+jhw4cODgAHzmfObm/nwAfObmfhw4cAAAGBgAGBgAAAAYGAAYGDD/AP8A/wD/AG9qam5ubm5v/7u6+vv7+///++uru/v7/wAAAAAAAAAAADh85ub+5uYA/Ob85ub+/AB85uDg5v58APjs5ubs/PgA/uD84OD+/gD+4Pzg4ODgAH7g4O7m/n4A5ub+5ubm5gB8ODg4OHx8AAYGBgbmfjwA5uz4+Ozm5gDg4ODg4P7+AMbu/tbGxsYA5vb+/v7u5gB8xsbGxv58APzm5v784OAAPObm5ux+NgD85ub8/ObmAHzgfAYG/vwA/jg4ODg4OADm5ubm5v7+AObm5ub+fDgAxsbW/v7uxgDm5jw85ubmAMbGfDg4ODgA/hw4cOD+/gAMGBgYGBgMABAofIJ8KBAAMBgYGBgYMAAkPFpaPBg8AAAAAAAA/wAAAAgDAwMJAAAAAAAAAAAAAAAIAwAACAAIAwMDAAgDAAgACAMAAAAIAwMJAAgDAwMACAMDCQAAAAAACAMDAwoACAMACAAIAwAIAAgDAAAACAMACAAIAwAAAAgDAAgAAAAAAAgDAwMJAAgDAAgACAMACAAIAwAAAAgDAAgACAMDAAAIAwMKAAAAAAAIAwAACAAIAwAIAAgDAAgACAMAAAAIAwAIAAgDAAAACAMDCQAAAAAACAMDAwMACAMDAwAIAwMDAAgDAwMACAMDAwAIAwMDAAgDAAgAAAAAAAgDAwMKAAgDAwMACAMDAwAIAwMDAAgDAwoACAMDAwAIAwAIAAAAAAAAAAAAAAgDAwMJAAAAAAAAAAAAAAAIAwAACAAACAMJAAgDAwMACAMAAAgAHR4fAAAAAAAAAAAAAAAAAAAACAMAAAgACAMACAAIAwAAAAgDAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgDAAAIAAgDAwMACAMDAwAIAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAIAwAACAAIAwAIAAAACAMACAMAAAgAAAAAAAAAAAAAAAAAAAAAAAAACAMDAwMACAMACAAIAwMDAAgDAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgDAwMKAAgDAAgACAMDAwAIAwAACAAAAAAAAAAAAAAAAA=="
+  },
+  {
+   "name": "B",
+   "address": "$4400",
+   "length": 1024,
+   "note": "jeskyn\u011b \u2014 dla\u017edice 2 \u00d7 2 (DLI \u2192 CHBASE $44)",
+   "data": "FiIdJiIpJS4UJB8nICknMBIqEiweLhIxICwzNyEtMTUWIhYuFh0WJBQgFDAUJBQgFiIWLhYdFiQeKh46Hi4eKhQgFCwUGxQiHCgcOBwsHCgRHSktER8pLg8nDycWMxYnFi4WLhYuFi4iLiIuFi4WLhQuFC4ULhQuIC4gLhQuFC4WLjIuFi4zLiIuMi4WLjMuFC4yLhQuMy4gLDAsFCwxLBYuFjoWLjU4Ii4iNxYuMTUULBQ4FCwUOCAsIDMULBQ4Fi4yLhYuMy4iLjIuFi4zLhQuMi4ULjMuICwwLBQsMSwuMikuJikiJiwwJywkJxQgNTIyLi4pKSYnMCQsICcUIAA8YDwGBjwAAGN3f2tjYwA/LyoA8/KiAD8vKgDz8qIAAAAAAAAMMAMAAAAAMADADADMAAwwAMAAwAwAzAAwAwABMwQMAgBIwEAAE7AEDCEDAQMEDBIwS9JAwBCwBMxhiwEDBg4XO237QMBQsOSsfeeqqoKisqqqqqqqgqKyqqqqAGZmPBgYGAAAAAAAAAAAAD8vKgDz8qIAPy8qAPPyogAADDADAAAAAMAAMMAAAAAAAMAAMAPADAAADADDAAwAAEDIADIEDDEDAgMoDGADgMBDyBQyBwwBAxaDOIwgcIDAa+0bOQcOAQO213ic4HCAwKqqgqKyqqqqqqqCorKqqqo/LyoA8/KiAD8vKgDz8qIAAAgKIiIKAgoAIKCIiKCAoA873rapmqWqwHD8f7+br5sEUBlRRSSWRRFBGFFFZIVYAQMEDBAwQMBAwBAwBAwBA6qqgqKyqqqqqqqCorKqqqrwP/v7/zwPCg/87+//PDCgPy8qAPPyogA/LyoA8/KiAAAAAAAKCgsLAAAwAzEYINIjMgMCBwQEPMiMwIDQEBA8iqKKoqgqCAKpmaqqqKhggBVhZCVEUEYQlViRGURREERAwBAwBAwBAwIDCAwgMIDAqqqCorKqqqqqqoKisqqqqlpKCj88MPAApKGk/DwMDA8/LyoA8/KiAD8vKgDz8qIAAAAAAAAAAAAAAAAAAAAAAKqAgICAgICAqgICAgICAgL/7+rA8/OjAz8/OjD//q4MAAAAAAAMMAMAAAAAMADADAAAAAADNBAxAAAAMBAMdAQAADADMRgg0gAAzCAcBJgI/+/qwPPzowM/Pzow//6uDD8vLgzz8rIwPy8rA/Py4sAAAAAAAAAAAAAAAAAAAAAAgICAgICAgKoCAgICAgICqnx8fHwvAAAAfHx8fP98fHwADDADAAAAAMAAMMAAAAAAADQRDQwAAABwQBBMwAAAAADYIgbEAzAAUEwQREzAAACqqoKisqqqqgDwAAAADwAAAAAAAAAAAAAAAAAAAAAAAA=="
+  },
+  {
+   "name": "C",
+   "address": "$4800",
+   "length": 1024,
+   "note": "zdroj anima\u010dn\u00edch r\u00e1mc\u016f pro sadu B",
+   "data": "//+/Ly8vv/+////+/v7/////vy8vL7//v////v7+///+//+/L7///y+//vjo+P7//v//vy+///8vv/746Pj+//j+//+/////Cy+//vj+///4/v//v////wsvv/74/v///v//vy+///8vv////v////7//78vv///L7////7/////vy8vL7/////++Pj4/v///78vLy+//////vj4+P7/////vy+////+///++P7/vy///78vv////v///vj+/78v/////////vj//////78vC/////////74//////+/Lwv//68vr////v///vj+/78v//+vL6////7///74/v+/L6qqgICKiouLqqoCAqKi4uKqqoCAioqLi6qqAgKiouLiAAAqKi8vLi4AAKio+Pi4uAAAKiovLy4uAACoqPj4uLiqqr+/urq4uKqq/v6uri4uqqq/v7q6uLiqqv7+rq4uLv//6urg4OLi//+rqwsLi4v//+rq4ODi4v//q6sLC4uLi4uKioCAqqri4qKiAgKqqouLioqAgKqq4uKiogICqqouLi8vKioAALi4+PioqAAALi4vLyoqAAC4uPj4qKgAALi4urq/v6qqLi6urv7+qqq4uLq6v7+qqi4urq7+/qqq4uLg4Orq//+LiwsLq6v//+Li4ODq6v//i4sLC6ur//8CAQsHKhWAQMCA8OCsWAMCAgELBiUQgFXAgPCgXAgDVgIBCgUgEJVqwICwYAwIV6oCAQkEIBWqf8CAcCAMWKv+AgEIBCUav3/AgDAgXKj//gIBCAUqH79qwIAwYKz4/6oCAQkGLx+qVcCAcKD8+KtWAgEKBy8alUDAgLDg/KhXApVqLx8KBQEBV6r8+LBggECqfy8aCQQBAav+/KhwIIBAv38qFQgEAQH//qxYMCCAQL9qJRAIBQEB/6pcCDBggECqVSAQCQYBAatWDAhwoIBAlUAgFQoHAQFXAgxYsOCAQIBAJRoLBwEBAwJcqPDggECAVSofCwYBAQNWrPjwoIBAwIDw4KxYAwICAQsHKhWAQMCA8OCsWAMCAgELByoVgEAwMCAgLBgDAggIBAQoFIBADAgMCAgEAwIgECAQIBCAQAwIDAgIBAMCIBAgECAQgEAwMCAgLBgDAggIBAQoFIBAwIDw4KxYAwICAQsHKhWAQMCA8OCsWAMCAgELByoVgEBXqvz4sGCAQJVqLx8KBQEBV6r8+LBggECVai8fCgUBARcqPDgwICAQlGgsHAgECAQDAggECAQIBIBAIBAgECAQAwIIBAgECASAQCAQIBAgEBcqPDgwICAQlGgsHAgECARXqvz4sGCAQJVqLx8KBQEBV6r8+LBggECVai8fCgUBAQ=="
+  }
+ ],
+ "tiles": {
+  "table": "$3C40",
+  "layout": [
+   0,
+   1,
+   16,
+   17
+  ],
+  "base": [
+   96,
+   70,
+   78,
+   34,
+   46,
+   98,
+   46,
+   74,
+   100,
+   100,
+   100,
+   100,
+   100,
+   100,
+   100,
+   100,
+   68,
+   68,
+   68,
+   68,
+   72,
+   72,
+   72,
+   72,
+   0,
+   0,
+   0,
+   102,
+   104,
+   106,
+   104,
+   102,
+   36,
+   38,
+   40,
+   42,
+   44,
+   98,
+   102,
+   104,
+   106,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   32,
+   32,
+   32,
+   32,
+   32,
+   32,
+   32,
+   32,
+   76,
+   76,
+   192,
+   192,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "runtimePatched": [
+  {
+   "address": "$4000",
+   "length": 8,
+   "code": "$2554 \u2190 $4058, $2918 \u2190 0, $15D1 rotace (znak 0 sady A)"
+  },
+  {
+   "address": "$4048",
+   "length": 16,
+   "code": "$240A: znaky 9\u201310 sady A \u2190 $4030/$4038 OR znak 0 (titulka)"
+  },
+  {
+   "address": "$4500",
+   "length": 16,
+   "code": "$1A6C: dla\u017edice $20 (mot\u00fdl) \u2190 blok C $4B00/$4B08 + X, 8 r\u00e1mc\u016f"
+  },
+  {
+   "address": "$4580",
+   "length": 16,
+   "code": "$1A78: dtto \u2190 $4B80/$4B88 + X"
+  },
+  {
+   "address": "$4510",
+   "length": 16,
+   "code": "$1AFD \u2190 $4670, $1B12 \u2190 $4760 + X (kouzeln\u00e1 ze\u010f, dla\u017edice $22)"
+  },
+  {
+   "address": "$4590",
+   "length": 16,
+   "code": "dtto"
+  },
+  {
+   "address": "$4600",
+   "length": 16,
+   "code": "$1A54: dla\u017edice $40 (v $3C40 nepou\u017eit\u00e1) \u2190 blok C $4800/$4808 + X"
+  },
+  {
+   "address": "$4680",
+   "length": 16,
+   "code": "$1A60: dtto \u2190 $4880/$4888 + X"
+  },
+  {
+   "address": "$4640",
+   "length": 16,
+   "code": "$1A3C: dla\u017edice $48 (diamant) \u2190 blok C $4A00/$4A08 + X, 8 r\u00e1mc\u016f"
+  },
+  {
+   "address": "$46C0",
+   "length": 16,
+   "code": "$1A48: dtto \u2190 $4A80/$4A88 + X"
+  },
+  {
+   "address": "$4660",
+   "length": 16,
+   "code": "$1986\u2013$1A34: dla\u017edice $4C (Rockford) \u2190 $3D00\u2013$3FFF podle sm\u011bru a n\u00e1hody"
+  },
+  {
+   "address": "$46E0",
+   "length": 16,
+   "code": "dtto"
+  },
+  {
+   "address": "$4700",
+   "length": 16,
+   "code": "$15AD \u2190 RANDOM p\u0159i odkr\u00fdv\u00e1n\u00ed, $1581 \u2190 0 (pr\u00e1zdno, dla\u017edice $60)"
+  },
+  {
+   "address": "$4780",
+   "length": 16,
+   "code": "dtto"
+  },
+  {
+   "address": "$4720",
+   "length": 16,
+   "code": "$1A84: dla\u017edice $64 (mu\u0161ka) \u2190 blok C $4900/$4908 + X, 8 r\u00e1mc\u016f"
+  },
+  {
+   "address": "$47A0",
+   "length": 16,
+   "code": "$1A90: dtto \u2190 $4980/$4988 + X"
+  },
+  {
+   "address": "$47E0",
+   "length": 8,
+   "code": "$193E: znak $7C (zakryt\u00ed p\u0159i odkr\u00fdv\u00e1n\u00ed) rotace"
+  }
+ ],
+ "rockfordFrames": {
+  "address": "$3D00",
+  "length": 768,
+  "data": "AAgKKiIKAgoAIKCoiKCAoAAICioqCgIKACCgqKiggKAACAoqKgoCCgAgoKiooICgAAgKKiIKAgoAIKCoiKCAoAAICiIiCgIKACCgiIiggKAACAoiIgoCCgAgoIiIoICgAAgKIiIKAgoAIKCIiKCAoAAICiIiCgIKACCgiIiggKAjDgMCBwQ8AMiwwIDQEBA8Iw4DAgcEPADIsMCA0BAQPCMOAwIHBDwAyLDAgNAQEDwjDgMCBwQ8AMiwwIDQEBA8Iw4DAgcEBDzIsMCA0BAQPCMOAwIHBAQ8yLDAgNAQEDwjDgMCBwQEPMiwwIDQEBA8Iw4DAgcEBDzIsMCA0BAQPAACCiIiCgICAICgoKCggIAAAgoiIgoCAgCAoKCgoICAAAIKIiIKAgIAgKCgoKCAgAAAAgoiIgoCAACAoKCgoIAAAAIKIiIKAgAAgKCgoKCAAAACCiIiCgIAAICgoKCggAACCiIiCgICAICgoKCggIAAAgoiIgoCAgCAoKCgoICAAw4DAgcQEPDAgMCA1AMDAAMOAwIHEBDwwIDAgNQDAwADDgMCBwQEPMCAwIDQFwMAAw4DAgcEBDzAgMCAwFQcDAMOAwIDAQEPwIDAgMBAcDADDgMCAwUFA8CAwIDAQEDAAw4DAgMFBQ/AgMCAwEBA8AMOAwIHBAQ8wIDAgMBUHAwAAgoKCgoCAgCAoIiIoICAAAIKCgoKAgIAgKCIiKCAgAACCgoKCgICAICgiIiggIAAAAIKCgoKAgAAgKCIiKCAAAACCgoKCgIAAICgiIiggAAAAgoKCgoCAACAoIiIoIAAAgoKCgoCAgCAoIiIoICAAAIKCgoKAgIAgKCIiKCAgAMCAwIXwMAAwLDAgNAEBA8DAgMCF8DAAMCwwIDQBAQPAwIDAgfVwADAsMCA0BAQPAMCAwIDFTQwwLDAgNAQEDwDAgMCAwENDMCwwIDAQEDwAwIDAgMBAQPAsMCAwFBQwAMCAwIDAQEPwLDAgMBQUPADAgMCAxU0MMCwwIDQEBA8",
+  "note": "\u2605 $1986\u2013$1A34: 8B \u0159\u00e1dky glyf\u016f kop\u00edrovan\u00e9 do $4660/$4668/$46E0/$46E8 podle sm\u011bru a n\u00e1hody; v\u00fdznam r\u00e1mc\u016f je M3"
+ }
+}

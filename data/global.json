@@ -1,0 +1,224 @@
+{
+ "_comment": "tools/dumpglobal.py — pevné tabulky a adresy referenčního programu: mřížka, generátor, obraz jeskyně, display list, pořadí jeskyní. Registry na startu jeskyně ověřuje tools/matchcavegen.mjs na 100 jeskyních.",
+ "grid": {
+  "address": "$4C00",
+  "width": 40,
+  "rows": 24,
+  "rowTable": "$2047",
+  "caveRows": [
+   2,
+   23
+  ],
+  "randomFill": {
+   "rows": [
+    3,
+    23
+   ],
+   "columns": [
+    0,
+    39
+   ],
+   "default": 1,
+   "code": "$1C02 / $1BE8"
+  },
+  "steelFrame": {
+   "object": 7,
+   "x": 0,
+   "y": 2,
+   "width": 40,
+   "height": 22,
+   "code": "$2235"
+  },
+  "neighbours": {
+   "table": "$2098",
+   "offsets": [
+    -40,
+    -39,
+    1,
+    41,
+    40,
+    39,
+    -1,
+    -41
+   ]
+  }
+ },
+ "prng": {
+  "routine": "$0C01",
+  "seed1": "$0782 = 0",
+  "seed2": "$0781 = hlavička[4 + úroveň]",
+  "constant": 19,
+  "usage": "$1BE8: objekt i platí, když nový $0782 < pravděpodobnost[i]; poslední platný vyhrává"
+ },
+ "caveScreen": {
+  "base": "$5003",
+  "rowStride": 160,
+  "rowTable": "$09EB",
+  "rows": 22,
+  "tileRow": 80,
+  "margin": {
+   "value": 74,
+   "ranges": [
+    "$5000–$5002",
+    "$5DC3–$5E62"
+   ],
+   "code": "$18BF"
+  },
+  "covered": {
+   "char": 124,
+   "code": "$1852 / $1870"
+  }
+ },
+ "displayList": {
+  "address": "$5EA0",
+  "template": "$0B28",
+  "raw": "707070c61f0874005074505074a05074f05074405174905174e05174305274805274d05274205374705374c05374105474605474b05474005574505574a05574f05574405674905674e05654305741a05e",
+  "statusLms": "$5EA4",
+  "statusBeforeBirth": "$081F",
+  "statusInGame": "$080B"
+ },
+ "caveStart": {
+  "chbase": 64,
+  "dli": [
+   {
+    "chbase": 68
+   }
+  ],
+  "dmactl": 34,
+  "chactl": 2,
+  "hscrol": 3,
+  "vscrol": 0,
+  "pmbase": 0,
+  "gractl": 0,
+  "prior": 0,
+  "colorsFromHeader": "$13–$17 → COLOR0–4 ($1E71)",
+  "windowNote": "LMS řádků = šablona (okno vlevo nahoře); originál je scrollem ve VBI posune ke startu Rockforda ještě před nakreslením — M3"
+ },
+ "sequence": {
+  "table": "$1E0B",
+  "endOfCycle": 21,
+  "entries": [
+   {
+    "number": 1,
+    "next": 2,
+    "intermission": 0
+   },
+   {
+    "number": 2,
+    "next": 3,
+    "intermission": 0
+   },
+   {
+    "number": 3,
+    "next": 4,
+    "intermission": 0
+   },
+   {
+    "number": 4,
+    "next": 17,
+    "intermission": 0
+   },
+   {
+    "number": 5,
+    "next": 6,
+    "intermission": 0
+   },
+   {
+    "number": 6,
+    "next": 7,
+    "intermission": 0
+   },
+   {
+    "number": 7,
+    "next": 8,
+    "intermission": 0
+   },
+   {
+    "number": 8,
+    "next": 18,
+    "intermission": 0
+   },
+   {
+    "number": 9,
+    "next": 10,
+    "intermission": 0
+   },
+   {
+    "number": 10,
+    "next": 11,
+    "intermission": 0
+   },
+   {
+    "number": 11,
+    "next": 12,
+    "intermission": 0
+   },
+   {
+    "number": 12,
+    "next": 19,
+    "intermission": 0
+   },
+   {
+    "number": 13,
+    "next": 14,
+    "intermission": 0
+   },
+   {
+    "number": 14,
+    "next": 15,
+    "intermission": 0
+   },
+   {
+    "number": 15,
+    "next": 16,
+    "intermission": 0
+   },
+   {
+    "number": 16,
+    "next": 20,
+    "intermission": 0
+   },
+   {
+    "number": 17,
+    "next": 5,
+    "intermission": 1
+   },
+   {
+    "number": 18,
+    "next": 9,
+    "intermission": 1
+   },
+   {
+    "number": 19,
+    "next": 13,
+    "intermission": 1
+   },
+   {
+    "number": 20,
+    "next": 21,
+    "intermission": 1
+   }
+  ]
+ },
+ "menu": {
+  "startCaves": [
+   1,
+   5,
+   9,
+   13
+  ],
+  "levels": 5,
+  "demo": {
+   "cave": 1,
+   "level": 0
+  }
+ },
+ "title": {
+  "code": "$23A0",
+  "noteTable": "$2328",
+  "notes": "0000000000000000000000000000000000000000204ebd499a45b241023e873a3e3724343731742ed92b63291027de24cd22d920011f431d9f1b121a9b183a17ec15b11488136f1266116c10800fa10ecf0d090d4d0c9d0bf60a580ac4093709b3083608c0075007e70684062606ce057b052c05e2040000ad7308c9a0d033ae7208ee7208ee7208bd01440aa8b928238d00d2b929238d02d2bd00440aa8b928238d04d2b929238d06d2ad7208d003ee740818ad730869038d07d2ad7308490769048d03d2ad730818690129a78d7308adab07f00cad7408c902d005a9018d750860a207bd30401d00409d4840bd38401d00409d5040ca10eb20ff1660a90085",
+  "notePage": "$4400",
+  "audctl": 120,
+  "init": "$2608: AUDC1 = AUDC3 = 0, SKCTL = 3, AUDCTL = $78"
+ }
+}

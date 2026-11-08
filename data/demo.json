@@ -1,0 +1,272 @@
+{
+ "_comment": "tools/dumptexts.py — skript vstupů dema z $3BC0 ($2896): bajt = (počet << 4) | páčka (hodnota STICK: $F klid, $E nahoru, $D dolů, $B vlevo, $7 vpravo), jednotka = jeden průchod mřížkou ($1D8F), konec páčkou 0 nebo fire. Jeskyně A, úroveň 1 ($2583). Přehrání je M5.",
+ "address": "$3BC0",
+ "cave": 1,
+ "level": 0,
+ "raw": "ffff1e772d974f2d473e1b4f1eb71d274f6d174d3b4f1d1b473b4f4e5b3e5b4d3b5f3eab1e3b1d6b4d174f3d474d4b2e273ea7a71d471d472d5f574e576f1d00",
+ "steps": [
+  {
+   "stick": 15,
+   "count": 15
+  },
+  {
+   "stick": 15,
+   "count": 15
+  },
+  {
+   "stick": 14,
+   "count": 1
+  },
+  {
+   "stick": 7,
+   "count": 7
+  },
+  {
+   "stick": 13,
+   "count": 2
+  },
+  {
+   "stick": 7,
+   "count": 9
+  },
+  {
+   "stick": 15,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 2
+  },
+  {
+   "stick": 7,
+   "count": 4
+  },
+  {
+   "stick": 14,
+   "count": 3
+  },
+  {
+   "stick": 11,
+   "count": 1
+  },
+  {
+   "stick": 15,
+   "count": 4
+  },
+  {
+   "stick": 14,
+   "count": 1
+  },
+  {
+   "stick": 7,
+   "count": 11
+  },
+  {
+   "stick": 13,
+   "count": 1
+  },
+  {
+   "stick": 7,
+   "count": 2
+  },
+  {
+   "stick": 15,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 6
+  },
+  {
+   "stick": 7,
+   "count": 1
+  },
+  {
+   "stick": 13,
+   "count": 4
+  },
+  {
+   "stick": 11,
+   "count": 3
+  },
+  {
+   "stick": 15,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 1
+  },
+  {
+   "stick": 11,
+   "count": 1
+  },
+  {
+   "stick": 7,
+   "count": 4
+  },
+  {
+   "stick": 11,
+   "count": 3
+  },
+  {
+   "stick": 15,
+   "count": 4
+  },
+  {
+   "stick": 14,
+   "count": 4
+  },
+  {
+   "stick": 11,
+   "count": 5
+  },
+  {
+   "stick": 14,
+   "count": 3
+  },
+  {
+   "stick": 11,
+   "count": 5
+  },
+  {
+   "stick": 13,
+   "count": 4
+  },
+  {
+   "stick": 11,
+   "count": 3
+  },
+  {
+   "stick": 15,
+   "count": 5
+  },
+  {
+   "stick": 14,
+   "count": 3
+  },
+  {
+   "stick": 11,
+   "count": 10
+  },
+  {
+   "stick": 14,
+   "count": 1
+  },
+  {
+   "stick": 11,
+   "count": 3
+  },
+  {
+   "stick": 13,
+   "count": 1
+  },
+  {
+   "stick": 11,
+   "count": 6
+  },
+  {
+   "stick": 13,
+   "count": 4
+  },
+  {
+   "stick": 7,
+   "count": 1
+  },
+  {
+   "stick": 15,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 3
+  },
+  {
+   "stick": 7,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 4
+  },
+  {
+   "stick": 11,
+   "count": 4
+  },
+  {
+   "stick": 14,
+   "count": 2
+  },
+  {
+   "stick": 7,
+   "count": 2
+  },
+  {
+   "stick": 14,
+   "count": 3
+  },
+  {
+   "stick": 7,
+   "count": 10
+  },
+  {
+   "stick": 7,
+   "count": 10
+  },
+  {
+   "stick": 13,
+   "count": 1
+  },
+  {
+   "stick": 7,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 1
+  },
+  {
+   "stick": 7,
+   "count": 4
+  },
+  {
+   "stick": 13,
+   "count": 2
+  },
+  {
+   "stick": 15,
+   "count": 5
+  },
+  {
+   "stick": 7,
+   "count": 5
+  },
+  {
+   "stick": 14,
+   "count": 4
+  },
+  {
+   "stick": 7,
+   "count": 5
+  },
+  {
+   "stick": 15,
+   "count": 6
+  },
+  {
+   "stick": 13,
+   "count": 1
+  },
+  {
+   "stick": 0,
+   "count": 0
+  }
+ ],
+ "sticks": {
+  "15": "none",
+  "14": "up",
+  "13": "down",
+  "11": "left",
+  "7": "right"
+ }
+}
