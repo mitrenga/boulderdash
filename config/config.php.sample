@@ -1,0 +1,9 @@
+<?php
+
+  // internal project: local run only, the browser loads app/ directly
+  $devMode = true;
+
+  $dbHostname = 'localhost';
+  $dbName = 'boulderdash';
+  $dbUser = 'your-user-name';
+  $dbPassword = 'your-password';
