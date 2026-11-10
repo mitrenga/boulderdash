@@ -78,10 +78,6 @@ export class GameApp extends AbstractApp {
       fonts5x5: new Fonts5x5(this),
       fonts3x3: new Fonts3x3(this)
     };
-    this.fonts.fonts5x5.addGlyphs({
-      '◢': {width: 4, data: [[4,0,1,1], [3,1,2,1], [2,2,3,1], [1,3,4,1], [0,4,5,1]]},
-      '◤': {width: 4, data: [[0,0,5,1], [0,1,4,1], [0,2,3,1], [0,3,2,1], [0,4,1,1]]}
-    });
     this.fonts.fonts5x5.addSpace('␣', {width: 2, breaking: false, stretch: true});
 
     // ★ The original is played with a joystick: four directions and the
