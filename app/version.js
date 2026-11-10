@@ -1,2 +1,2 @@
 // begin code
-export const Version = '0.1.0';
+export const Version = '2026.11.10';
